@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
+      lang="en" suppressHydrationWarning={true}
       className={`${OutfitFont.className}  h-full antialiased`}
     >
       <body>
