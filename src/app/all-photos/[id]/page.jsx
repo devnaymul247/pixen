@@ -1,7 +1,7 @@
 
 const PhotoDetailsPage = async ({params}) => {
     const {id} = await params;
-    const res = await fetch('https://pixgen-eta.vercel.app/data.json')
+    const res = await fetch('https://pixgen-master.vercel.app/data.json')
     const photos = await res.json()
 
     const photo = photos.find(p => p.id == id)
